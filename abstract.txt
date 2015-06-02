@@ -11,16 +11,18 @@ Milky Way but still many times the distance of the farthest known transiting
 exoplanets. However, even at these distances, K2 will be able to easily
 observe giant stars (Kp ~ XX mag).
 
-Co-I Foreman-Mackey was lead author on the first systematic search for
-transiting exoplanets using the public K2 light curves (Foreman-Mackey et al.
-2015).
+We have developed a method for exoplanet transit search using K2 data that
+resulted in the publication of the first systematic catalog of transit
+candidates based on a K2 data release.
+This method can robustly detect transiting exoplanets despite the large
+systematic variability introduced by the diminished pointing precision of the
+Kepler spacecraft and it is reasonably complete to faint apparent magnitudes
+(Kp ~ 17-18 mag).
 
-For this purpose, the authors developed a method for robustly detecting
-transiting exoplanets even in the face of large systematic noise introduced by
-the pointing variations of the spacecraft.
-This method enabled the discovery of candidate exoplanets transiting all but
-the faintest targets.
-
-Most of the stars belonging to The Stream are too faint to reliably discover
-planets but even a single discovery, as the first known exoplanet of
-extragalactic origin, would be of great scientific interest.
+We propose to target the brightest (~100) Sgr stream member stars in Campaign 8
+of the K2 Mission and, using our transit detection procedure, search the light
+curves for large planets transiting these giant stars.
+These signals will be small and the light curves will be noisy so BLAH will be
+necessary for discovery.
+The cost is low to target these sources and the discovery of even a single
+transiting planet of extragalactic origin would be very exciting.
