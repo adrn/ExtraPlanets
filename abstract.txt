@@ -1,1 +1,20 @@
-Towards the discovery of extragalactic exoplanets
+Extragalactic exoplanets
+
+The proposed pointing for Campaign 8 of the K2 Mission presents an
+unprecedented opportunity to discover and characterize planets transiting stars
+belonging to the Sagittarius Stellar Stream.
+TODO: some words about Sagittarius.
+
+Co-I Foreman-Mackey was lead author on the first systematic search for
+transiting exoplanets using the public K2 light curves (Foreman-Mackey et al.
+2015).
+For this purpose, the authors developed a method for robustly detecting
+transiting exoplanets even in the face of large systematic noise introduced by
+the pointing variations of the spacecraft.
+This method enabled the discovery of candidate exoplanets transiting all but
+the faintest targets.
+
+Most of the stars belonging to The Stream are too faint to reliably discover
+planets but even a single discovery, as the first known exoplanet of
+extragalactic origin, would be of great scientific interest.
+
