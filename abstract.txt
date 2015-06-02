@@ -2,12 +2,19 @@ Extragalactic exoplanets
 
 The proposed pointing for Campaign 8 of the K2 Mission presents an
 unprecedented opportunity to discover and characterize planets transiting stars
-belonging to the Sagittarius Stellar Stream.
-TODO: some words about Sagittarius.
+belonging to the Sagittarius Stellar Stream (Sgr stream). The Sgr stream is a
+well-studied tidal debris structure that wraps around the entire Milky Way and
+is detected in many different stellar populations (from main sequence to M and
+K giant stars). The nearest sections of the stream visible in Field 8 span a
+range of distances from 10-30 kpc, closer than satellite galaxies around the
+Milky Way but still many times the distance of the farthest known transiting
+exoplanets. However, even at these distances, K2 will be able to easily
+observe giant stars (Kp ~ XX mag).
 
 Co-I Foreman-Mackey was lead author on the first systematic search for
 transiting exoplanets using the public K2 light curves (Foreman-Mackey et al.
 2015).
+
 For this purpose, the authors developed a method for robustly detecting
 transiting exoplanets even in the face of large systematic noise introduced by
 the pointing variations of the spacecraft.
@@ -17,4 +24,3 @@ the faintest targets.
 Most of the stars belonging to The Stream are too faint to reliably discover
 planets but even a single discovery, as the first known exoplanet of
 extragalactic origin, would be of great scientific interest.
-
