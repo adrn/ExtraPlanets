@@ -13,16 +13,16 @@ observe giant stars (Kp ~ XX mag).
 
 We have developed a method for exoplanet transit search using K2 data that
 resulted in the publication of the first systematic catalog of transit
-candidates based on a K2 data release.
-This method can robustly detect transiting exoplanets despite the large
-systematic variability introduced by the diminished pointing precision of the
-Kepler spacecraft and it is reasonably complete to faint apparent magnitudes
-(Kp ~ 17-18 mag).
+candidates based on a K2 data release. This method can robustly detect
+transiting exoplanets despite the large systematic variability introduced by
+the diminished pointing precision of the Kepler spacecraft and it is reasonably
+complete to faint apparent magnitudes (Kp ~ 17-18 mag).
 
 We propose to target the brightest (~100) Sgr stream member stars in Campaign 8
 of the K2 Mission and, using our transit detection procedure, search the light
-curves for large planets transiting these giant stars.
-These signals will be small and the light curves will be noisy so BLAH will be
-necessary for discovery.
-The cost is low to target these sources and the discovery of even a single
-transiting planet of extragalactic origin would be very exciting.
+curves for large planets transiting these giant stars. These signals will be
+small and the light curves will be noisy, therefore robust noise modeling will
+be crucial for transit signal discovery. While the chance of discovering a
+transiting planet belonging to the Sgr stream is low, the cost is low and the
+discovery of even a single transiting planet of extragalactic origin would be
+exciting.
