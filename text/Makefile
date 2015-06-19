@@ -1,17 +1,16 @@
-NAME        = proposal-abstract
-
-LATEX       = pdflatex
+LATEX       = TEXINPUTS=..:${TEXINPUTS} pdflatex
 BASH        = bash -c
 ECHO        = echo
 RM          = rm -rf
-RM_TMP      = ${RM} $(foreach suff, ${TMP_SUFFS}, ${NAME}.${suff})
 
-TMP_SUFFS   = pdf aux bbl blg log dvi ps eps out synctex.gz
-SUFF        = pdf
+TMP_SUFFS   = aux bbl blg log dvi ps eps
+RM_TMP      = ${RM} $(foreach suff, ${TMP_SUFFS}, *.${suff})
 
 CHECK_RERUN = grep Rerun $*.log
 
-all: ${NAME}.pdf
+ALL_FILES = proposal.pdf
+
+all: ${ALL_FILES}
 
 %.pdf: %.tex
 	${LATEX} $<
@@ -19,4 +18,4 @@ all: ${NAME}.pdf
 	( ${CHECK_RERUN} && ${LATEX} $< ) || echo "Done."
 
 clean:
-	${RM_TMP}
+	${RM_TMP} ${ALL_FILES}
