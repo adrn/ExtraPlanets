@@ -21,11 +21,48 @@ Jupiters transiting these stars.}
 
 \paragraph{Transit search methodology}
 
-We have developed a method \citep{Foreman-Mackey:2015}
+We have developed a method for searching for transit signals using the \KT\
+data products and this method resulted in the first systematic catalog of
+transiting exoplanets from \KT\ \citep{Foreman-Mackey:2015}.
+This method is robust to the systematic variability of the light curves
+introduced by instrumental effects but it is susceptible to overfitting when
+applied to the light curves of intrinsically variable stars
+\citep{Montet:2015}.
+Since giant stars have higher amplitude variability, it is necessary to
+augment the light curve noise model with a term accounting for the
+contribution from the intrinsic variability of the star.
+It has been demonstrated that a Gaussian Process
+\citep[GP;][]{Rasmussen:2006, Ambikasaran:2014} is a good effective
+model for this stochastic variability \citep{Barclay:2015}.
+In our original transit search procedure, we phrased the problem as linear
+regression \citep{Foreman-Mackey:2015} where the light curve $\bvec{f}$ is
+modeled as
+\begin{eqnarray}
+\bvec{f} &=& \bvec{B}\,\bvec{w} + \bvec{m} + \mathrm{noise}
+\end{eqnarray}
+where $\bvec{B}$ is a set of eigen light curves (ELCs), $\bvec{m}$ is a
+transit model, and the linear weights $\bvec{w}$ are marginalized out in the
+computation.
+This model can equivalently be written as a GP \citep{Rasmussen:2006}
+\begin{eqnarray}
+\bvec{f} &\sim& \mathcal{N} (\bvec{m},\,
+\bvec{\Sigma} + \bvec{B}\bvec{\Lambda}\bvec{B}^\mathrm{T})
+\end{eqnarray}
+where $\bvec{\Sigma}$ is the diagonal matrix of measurement variances and
+$\bvec{\Lambda}$ is the diagonal matrix of the prior variances on the ELC
+weights.
+This means that a temporal model for the stochastic stellar variability can
+also be included
+\begin{eqnarray}
+\bvec{f} &\sim& \mathcal{N} (\bvec{m},\,
+\bvec{\Sigma} + \bvec{B}\bvec{\Lambda}\bvec{B}^\mathrm{T} + \bvec{K})
+\end{eqnarray}
+where the elements $K_{ij}$ of $\bvec{K}$ are given by the covariance function
+$k(t_i,\,t_j)$.
 
 \paragraph{Estimated planet yield} blah.
 
-\paragraph{Asteroseismology}
+\paragraph{The age distribution of the Sagittarius stream}
 
 blah
 
@@ -55,11 +92,27 @@ blah
 \begin{thebibliography}{}%
 \raggedright\raggedbottom\scriptsize\setlength{\parskip}{-0.5em}%
 
+\bibitem[Ambikasaran \etal(2014)]{Ambikasaran:2014}
+Ambikasaran, S., Foreman-Mackey, D., Greengard, L., Hogg, D.~W.,
+\& O'Neil, M.\ 2014, \arxiv{1403.6015}
+
+\bibitem[Barclay \etal(2015)]{Barclay:2015}
+Barclay, T., Endl, M., Huber, D., Foreman-Mackey, D., \etal\ 2015, \apj, 800,
+46
+
 \bibitem[Foreman-Mackey \etal(2014)]{Foreman-Mackey:2014}
 Foreman-Mackey, D., Hogg, D.~W., \& Morton, T.~D.\ 2014, \apj, 795, 64
 
 \bibitem[Foreman-Mackey \etal(2015)]{Foreman-Mackey:2015}
 Foreman-Mackey, D., Montet, B.~T., Hogg, D.~W., \etal\ 2015, \arxiv{1502.04715}
+
+\bibitem[Montet \etal(2015)]{Montet:2015}
+Montet, B.~T., Morton, T.~D., Foreman-Mackey, D., \etal\ 2015,
+\arxiv{1503.07866}
+
+\bibitem[Rasmussen \& Williams(2006)]{Rasmussen:2006}
+Rasmussen, C.~E., \& Williams, C.~K.~I., \emph{Gaussian Processes for Machine
+Learning}, The MIT Press, 2006
 
 \end{thebibliography}
 \end{multicols}
