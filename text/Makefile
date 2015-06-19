@@ -8,7 +8,7 @@ RM_TMP      = ${RM} $(foreach suff, ${TMP_SUFFS}, *.${suff})
 
 CHECK_RERUN = grep Rerun $*.log
 
-ALL_FILES = proposal.pdf
+ALL_FILES = proposal.pdf biosketch_hogg.pdf biosketch_dfm.pdf biosketch_apw.pdf
 
 all: ${ALL_FILES}
 
