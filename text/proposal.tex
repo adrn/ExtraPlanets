@@ -21,17 +21,31 @@ Jupiters transiting these stars.}
 
 The Sagittarius (Sgr) stream is the most massive and prominent stellar tidal stream observed in the halo of the Milky Way. Stars associated with the stream (via kinematics and chemical abundances) fully encircle the Galaxy and span heliocentric distances of $\approx$15 kpc to $\approx$100 kpc. The footprint of \KT\ fields 8 and 10 overlap with regions of the stream previously detected in K/M giant and F turnoff stars \citep{Majewski:2003, Yanny:2009} at distances of $\approx$20--30 kpc. Though this is an order of magnitude farther than any of the known transiting exoplanets, the stream is one of the closest hosts of extragalactic stars --- thus, the Sgr stream represents a unique opportunity to detect the first exoplanet formed outside of our own Galaxy.
 
-We select M giant candidates using the Two Micron All Sky Survey \citep[2MASS; ][]{Skrutskie:2006} photometry provided in the \KT\ field catalogs\footnote{\url{https://archive.stsci.edu/k2/catalogs.html}} following the selection criteria used in \cite[][hereafter M03]{Majewski:2003}, with slight modifications. We first use the dust reddening measurements of \cite{Schlafly:2011} to de-redden the observed magnitudes (following the conversion of E(B-V) to the 2MASS bandpasses used in M03); for this procedure, we assume all stars are at sufficiently large distances and are therefore behind the dust (an invalid assumption for dwarf stars). We select all point source targets from this catalog by requiring that \texttt{Objtype == `STAR'}: Figure~\ref{} shows all point sources (black markers) in color-magnitude (left) and color-color (right) space. To select the M giant candidates, we first require that either the proper motion in any component is small ($|\mu_\alpha |,|\mu_\delta | < 10~{\rm mas}~{\rm yr}^{-1}$) or that the proper motion is unmeasured. We then use the following (unrestrictive) selection criteria to isolate M giant candidates:
-\begin{align} % eff off with yr eqn arrays
+We select M giant candidates using the Two Micron All Sky Survey \citep[2MASS; ][]{Skrutskie:2006} photometry provided in the \KT\ field catalogs\footnote{\url{https://archive.stsci.edu/k2/catalogs.html}} following the selection criteria used in \cite[][hereafter M03]{Majewski:2003}, with slight modifications. We first use the dust reddening measurements of \cite{Schlafly:2011} to de-redden the observed magnitudes (following the conversion of E(B-V) to the 2MASS bandpasses used in M03); for this procedure, we assume all stars are at sufficiently large distances and are therefore behind the dust (an invalid assumption for dwarf stars). We select all point source targets from this catalog by requiring that \texttt{Objtype == `STAR'}: Figures~\ref{fig:field8} and \ref{fig:field10} show all point sources (black markers) in color-magnitude (left) and color-color (right) space for field 8 and 10, respectively. To select the M giant candidates, we first require that either the proper motion in any component is small ($|\mu_\alpha |,|\mu_\delta | < 10~{\rm mas}~{\rm yr}^{-1}$) or that the proper motion is unmeasured. We then use the following (unrestrictive) selection criteria to isolate M giant candidates:
+\begin{align} % get outta here with yr eqn arrays
 	1.1 &> (J-K_s)_0 > 0.85 \\
 	13.1 &> K_s > 10.5\\
 	(J-H)_0 &< 0.561\,(J-K_s)_0 + 0.34\\
 	(J-H)_0 &> 0.5\,(J-K_s)_0 + 0.2\\
 	(J-H)_0 &> -0.4\,(J-K_s)_0 + 1.1
 \end{align}
-where the first color cut is designed to select M type stars, the $K_s$ magnitude limits are designed to only select would-be M giants in the distance range $\approx$15--40 kpc, and the other color cuts are to limit contamination from dwarf stars \citep[e.g.,][]{Majewski:2003}.
+where the first color cut is designed to select M type stars, the $K_s$ magnitude limits are designed to only select would-be M giants in the distance range $\approx$15--40 kpc, and the other color cuts are to limit contamination from dwarf stars \citep[e.g.,][]{Majewski:2003}. For selection in field 10, we instead use the magnitude range $14 > K_s > 12$ because the stream is more distant ($d_\odot \approx 60$ kpc). Over-plotted on Figures~\ref{fig:field8}--\ref{fig:field10} in larger (blue) markers are the targets that pass these criteria, along with the selection window (in color-color space). There are 46 targets in field 8 and 202 targets in field 10. Because the targets in field 10 are fainter, there is more contamination with dwarfs.
 
-Over-plotted on Figure~\ref{} in larger (blue) markers are the targets that pass these criteria, along with the selection window (in color-color space). There are XX targets in field 8 and YY targets in field 10 that pass these selection criteria.
+\begin{figure*}[p]
+\begin{center}
+\includegraphics[width=\textwidth]{fig1.pdf}
+\caption{} 
+\label{fig:field8}
+\end{center}
+\end{figure*}
+
+\begin{figure*}[p]
+\begin{center}
+\includegraphics[width=\textwidth]{fig2.pdf}
+\caption{} 
+\label{fig:field10}
+\end{center}
+\end{figure*}
 
 TODO: proposed follow-up to get RVs
 
