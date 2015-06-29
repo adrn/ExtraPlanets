@@ -11,17 +11,60 @@
 
 \begin{document}
 
-The current.
+The Sagittarius (Sgr) stream is the most massive and prominent stellar tidal
+stream observed in the halo of the Milky Way. Stars associated with the stream
+(via kinematics and chemical abundances) fully encircle the Galaxy and span
+heliocentric distances of $\approx$15 kpc to $\approx$100 kpc. The footprint
+of \KT\ fields 8 and 10 overlap with regions of the stream previously detected
+in K/M giant and F turnoff stars \citep{Majewski:2003, Yanny:2009} at
+distances of $\approx$20--30 kpc. Though this is an order of magnitude farther
+than any of the known transiting exoplanets, the stream is one of the closest
+hosts of extragalactic stars --- thus, the Sgr stream represents a unique
+opportunity to detect the first exoplanetary system formed outside of our own
+Galaxy.
+
+To detect transits at these large distances, bright (giant) targets are
+required and only large planets on short orbital periods will be accessible.
+Since few planetary systems orbiting giant stars have been discovered, little
+is known about the occurrence rate and distribution of these planets (CITE).
+Therefore, it is hard to make a robust prediction of the yield for this
+proposal but we have demonstrated that it is possible to use \KT\ to discover
+transiting planets around even the faintest targets
+\citep{Foreman-Mackey:2015}.
+The methods developed in trying to detect transits in the light curves of
+these noisy faint stars will improve the detection efficiency of transit
+search algorithms even when applied to brighter and quieter targets.
 
 {\bf We propose to target the brightest likely members of the Sagittarius
-stellar stream that fall in the field-of-view of Campaign 8 and search for hot
-Jupiters transiting these stars.}
+stellar stream that fall in the fields-of-view of Campaigns 8 and 10 (K2C8 and
+K2C10 respectively) and develop novel methods to search for hot Jupiters
+transiting these stars.}
+
+It has been demonstrated that the long cadence \KT\ light curves can be used
+to measure the asteroseismic oscillations of giant stars (CITE Angus).
+Applying this methodology to these proposed targets in the Sgr stream, {\bf we
+propose to estimate the ages of giant stars tracing the stream and.}
+
 
 \paragraph{Target selection}
 
-The Sagittarius (Sgr) stream is the most massive and prominent stellar tidal stream observed in the halo of the Milky Way. Stars associated with the stream (via kinematics and chemical abundances) fully encircle the Galaxy and span heliocentric distances of $\approx$15 kpc to $\approx$100 kpc. The footprint of \KT\ fields 8 and 10 overlap with regions of the stream previously detected in K/M giant and F turnoff stars \citep{Majewski:2003, Yanny:2009} at distances of $\approx$20--30 kpc. Though this is an order of magnitude farther than any of the known transiting exoplanets, the stream is one of the closest hosts of extragalactic stars --- thus, the Sgr stream represents a unique opportunity to detect the first exoplanet formed outside of our own Galaxy.
-
-We select M giant candidates using the Two Micron All Sky Survey \citep[2MASS; ][]{Skrutskie:2006} photometry provided in the \KT\ field catalogs\footnote{\url{https://archive.stsci.edu/k2/catalogs.html}} following the selection criteria used in \cite[][hereafter M03]{Majewski:2003}, with slight modifications. We first use the dust reddening measurements of \cite{Schlafly:2011} to de-redden the observed magnitudes (following the conversion of E(B-V) to the 2MASS bandpasses used in M03); for this procedure, we assume all stars are at sufficiently large distances and are therefore behind the dust (an invalid assumption for dwarf stars). We select all point source targets from this catalog by requiring that \texttt{Objtype == `STAR'}: Figures~\ref{fig:field8} and \ref{fig:field10} show all point sources (black markers) in color-magnitude (left) and color-color (right) space for field 8 and 10, respectively. To select the M giant candidates, we first require that either the proper motion in any component is small ($|\mu_\alpha |,|\mu_\delta | < 10~{\rm mas}~{\rm yr}^{-1}$) or that the proper motion is unmeasured. We then use the following (unrestrictive) selection criteria to isolate M giant candidates:
+We select M giant candidates using the Two Micron All Sky Survey \citep[2MASS;
+][]{Skrutskie:2006} photometry provided in the \KT\ field
+catalogs\footnote{\url{https://archive.stsci.edu/k2/catalogs.html}} following
+the selection criteria used in \cite[][hereafter M03]{Majewski:2003}, with
+slight modifications. We first use the dust reddening measurements of
+\cite{Schlafly:2011} to de-redden the observed magnitudes (following the
+conversion of E(B-V) to the 2MASS bandpasses used in M03); for this procedure,
+we assume all stars are at sufficiently large distances and are therefore
+behind the dust (an invalid assumption for dwarf stars). We select all point
+source targets from this catalog by requiring that \texttt{Objtype == `STAR'}:
+Figures~\ref{fig:field8} and \ref{fig:field10} show all point sources (black
+markers) in color-magnitude (left) and color-color (right) space for field 8
+and 10, respectively. To select the M giant candidates, we first require that
+either the proper motion in any component is small ($|\mu_\alpha |,|\mu_\delta
+| < 10~{\rm mas}~{\rm yr}^{-1}$) or that the proper motion is unmeasured. We
+then use the following (unrestrictive) selection criteria to isolate M giant
+candidates:
 \begin{align} % get outta here with yr eqn arrays
 	1.1 &> (J-K_s)_0 > 0.85 \\
 	13.1 &> K_s > 10.5\\
@@ -29,15 +72,39 @@ We select M giant candidates using the Two Micron All Sky Survey \citep[2MASS; ]
 	(J-H)_0 &> 0.5\,(J-K_s)_0 + 0.2\\
 	(J-H)_0 &> -0.4\,(J-K_s)_0 + 1.1
 \end{align}
-where the first color cut is designed to select M type stars, the $K_s$ magnitude limits are designed to only select would-be M giants in the distance range $\approx$15--40 kpc, and the other color cuts are to limit contamination from dwarf stars \citep[e.g.,][]{Majewski:2003}. For selection in field 10, we instead use the magnitude range $14 > K_s > 12$ because the stream is more distant ($d_\odot \approx 60$ kpc). Over-plotted on Figures~\ref{fig:field8}--\ref{fig:field10} in larger (blue) markers are the targets that pass these criteria, along with the selection window (in color-color space). There are 46 targets in field 8 and 202 targets in field 10. Because the targets in field 10 are fainter, there is more contamination with dwarfs.
+where the first color cut is designed to select M type stars, the $K_s$
+magnitude limits are designed to only select would-be M giants in the distance
+range $\approx$15--40 kpc, and the other color cuts are to limit contamination
+from dwarf stars \citep[e.g.,][]{Majewski:2003}. For selection in field 10, we
+instead use the magnitude range $14 > K_s > 12$ because the stream is more
+distant ($d_\odot \approx 60$ kpc). Over-plotted on
+Figures~\ref{fig:field8}--\ref{fig:field10} in larger (blue) markers are the
+targets that pass these criteria, along with the selection window (in
+color-color space). There are 46 targets in field 8 and 202 targets in field
+10. Because the targets in field 10 are fainter, there is more contamination
+with dwarfs.
 
-\begin{figure*}[p]
-\begin{center}
-\includegraphics[width=\textwidth]{fig1.pdf}
-\caption{Color-magnitude (left) and color-color (right) plot for all 2MASS stars in Field 8. M giant candidates must match color selection region (shown between thick lines) and must either have low proper motion or no measured proper motions --- candidates are shown as larger (blue) markers. }
-\label{fig:field8}
-\end{center}
-\end{figure*}
+\tbfigure{fig1.pdf}{%
+Color-magnitude (left) and color-color (right) plot for all 2MASS
+stars in Field 8. M giant candidates must match color selection region (shown
+between thick lines) and must either have low proper motion or no measured
+proper motions --- candidates are shown as larger (blue) markers.
+\label{fig:field8}}
+
+\tbfigure{fig2.pdf}{%
+Same as Figure~\ref{fig:field8} but for Field 10.
+\label{fig:field10}}
+
+% \begin{figure*}[p]
+% \begin{center}
+% \includegraphics[width=\textwidth]{fig1.pdf}
+% \caption{Color-magnitude (left) and color-color (right) plot for all 2MASS
+% stars in Field 8. M giant candidates must match color selection region (shown
+% between thick lines) and must either have low proper motion or no measured
+% proper motions --- candidates are shown as larger (blue) markers. }
+% \label{fig:field8}
+% \end{center}
+% \end{figure*}
 
 \begin{figure*}[p]
 \begin{center}
@@ -47,7 +114,11 @@ where the first color cut is designed to select M type stars, the $K_s$ magnitud
 \end{center}
 \end{figure*}
 
-We have received time on the 2.4 meter Hiltner telescope at MDM Observatory to obtain spectra and therefore radial velocities for a sample of these stars. With radial velocities we will be able to (a) remove M dwarf contaminants and (2) further purify the sample to select M giants that are kinematically associated with the Sgr stream.
+We have received time on the 2.4 meter Hiltner telescope at MDM Observatory to
+obtain spectra and therefore radial velocities for a sample of these stars.
+With radial velocities we will be able to (a) remove M dwarf contaminants and
+(2) further purify the sample to select M giants that are kinematically
+associated with the Sgr stream.
 
 % Majewski: http://adsabs.harvard.edu/abs/2003ApJ...599.1082M
 % Yanny: http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:0905.4502
@@ -66,9 +137,9 @@ applied to the light curves of intrinsically variable stars
 Since giant stars have higher amplitude variability, it is necessary to
 augment the light curve noise model with a term accounting for the
 contribution from the intrinsic variability of the star.
-It has been demonstrated that a Gaussian Process
-\citep[GP;][]{Rasmussen:2006, Ambikasaran:2014} is a good effective
-model for this stochastic variability \citep{Barclay:2015}.
+It has been demonstrated that a Gaussian Process \citep[GP;][]{Rasmussen:2006,
+Ambikasaran:2014} is a good effective model for this stochastic variability in
+the light curves of giant stars \citep{Barclay:2015}.
 In our original transit search procedure, we phrased the problem as linear
 regression \citep{Foreman-Mackey:2015} where the light curve $\bvec{f}$ is
 modeled as
@@ -78,7 +149,8 @@ modeled as
 where $\bvec{B}$ is a set of eigen light curves (ELCs), $\bvec{m}$ is a
 transit model, and the linear weights $\bvec{w}$ are marginalized out in the
 computation.
-This model can equivalently be written as a GP \citep{Rasmussen:2006}
+This (marginalized) model can be written equivalently as the GP
+\citep{Rasmussen:2006}
 \begin{eqnarray}
 \bvec{f} &\sim& \mathcal{N} (\bvec{m},\,
 \bvec{\Sigma} + \bvec{B}\bvec{\Lambda}\bvec{B}^\mathrm{T})
@@ -93,7 +165,16 @@ also be included
 \bvec{\Sigma} + \bvec{B}\bvec{\Lambda}\bvec{B}^\mathrm{T} + \bvec{K})
 \end{eqnarray}
 where the elements $K_{ij}$ of $\bvec{K}$ are given by the covariance function
-$k(t_i,\,t_j)$.
+$k(t_i,\,t_j)$ following \citep{Barclay:2015}.
+
+{\bf We propose to generalize our previously published transit search method
+\citep{Foreman-Mackey:2015} to account for the variability of giant stars and
+use this procedure to search for exoplanets transiting giant stellar members
+of the Sgr stellar stream.} The proposed methodological developments have
+implications beyond this proposed goal and could be used for robustly
+detecting transiting planets orbiting variable stars in existing time series
+datasets (\KT\ and \kepler, for example) and upcoming missions like \TESS\ and
+\PLATO.
 
 \paragraph{Estimated planet yield} blah.
 
@@ -102,24 +183,6 @@ $k(t_i,\,t_j)$.
 Out of ideas here! Maybe drop it?
 
 
-% \ssfigure{../figures/period.pdf}{0.4}{%
-% The posterior probability density for the period
-% of a Neptune-sized transiting planet with a $300\,\mathrm{day}$ orbital period
-% injected into the \Kepler\ light curve for a relatively bright (\Kepler\
-% magnitude $13.5$) G-dwarf.
-% \emph{Top:} The light curve---de-trended using a median filter after the
-% injection---centered on the transit.
-% The data are shown as black points and the lines are $50$ posterior
-% predictions for light curve.
-% \emph{Bottom:} The Markov Chain Monte Carlo estimate of the posterior
-% constraint on the period of the orbit given this single transit.
-% The vertical gray line indicates the true injected period.
-% To produce this measurement, I assumed that the stellar mass and radius were
-% known to $10\%$ and chose a beta function prior on the eccentricity
-% \citep{ecc-prior}.
-% This distribution is covariant with the stellar parameters, eccentricity, and
-% impact parameter and in this figure, I marginalized over these effects.
-% \label{fig:period}}
 
 \begin{multicols}{2}
 {\centering\bf REFERENCES\par}
