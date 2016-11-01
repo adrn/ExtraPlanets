@@ -1,0 +1,54 @@
+The proposed pointings for Campaigns 14, 15, and 16 of the K2 Mission present
+an unprecedented opportunity to discover and characterize planets transiting
+stars belonging to the Sagittarius (Sgr) and the GD-1 stellar streams.
+Stellar streams are spatially coherent remnants of tidally disrupted stellar
+satellites such as globular clusters and dwarf galaxies.
+The stars in these streams therefore typically have low metallicities, old
+ages, and have formed in a very different chemical environment relative to
+Milky Way disk stars.
+With much higher stellar densities relative to the Galactic halo and distinct
+chemical properties, these substructures will provide an exciting and
+economical way to study the population statistics of planetary systems at low
+stellar metallicities.
+Both Sgr and GD-1 are well-studied tidal debris structures:
+The Sgr stream is forming from the destruction of the Sgr dwarf galaxy, and
+GD-1 is likely the remnant of a fully-disrupted, unknown globular cluster.
+
+The Sgr stream has been traced a full 360 degrees around the Milky Way and is
+detected in many different stellar populations (from main sequence to M and K
+giant stars).
+The nearest sections of Sgr visible in Fields 14-16 span a range of distances
+from 10-30 kpc, closer than any other satellite galaxy around the Milky Way but
+still many times the distance of the farthest known transiting exoplanets.
+However, even at these distances, K2 will be able to easily observe giant stars
+(Kp ~ 16-18).
+
+The GD-1 stream is only ~60 degrees in length and is primarily seen in main
+sequence stars.
+Fortunately, the nearest end of the stream (at heliocentric distance ~ 7 kpc)
+intersects the center of the Campaign 16 field.
+At these distances, main sequence turnoff stars are around Kp ~ 17.5-18.5 and
+are easily detectable by K2.
+
+In previous work, we have developed and demonstrated a method to search for
+exoplanet transits using K2 data that has resulted in the publication of the
+first systematic catalog of transit candidates based on a K2 data release.
+This method can robustly detect transiting exoplanets despite the large
+systematic variability introduced by the diminished pointing precision of the
+Kepler spacecraft and performs well even at faint apparent magnitudes (Kp ~
+17-18 mag).
+
+We propose to target all of the brightest Sgr and GD-1 stream member stars in
+Campaigns 14-16 of the K2 Mission (~300 targets).
+Using our transit detection procedure, we will search the light curves for
+large planets transiting these stars.
+These signals will be small and the light curves will be noisy, therefore
+robust noise modeling will be crucial for transit signal discovery.
+In both streams, we will be most sensitive to giant stars.
+
+Though the chance of discovering a transiting planet belonging to a star in
+either stellar stream is admittedly low, the relative cost of observing these
+targets is also low:
+The discovery of even a single transiting planet of extragalactic origin could
+open a new direction for studying planet formation and population statistics in
+unique stellar populations.
